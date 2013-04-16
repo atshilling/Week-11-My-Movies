@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--My Movies View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="MyMoviesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blD-Ai-5gU">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="HQi-fm-DYM"/>
+                                    <constraint firstAttribute="height" constant="207" id="xfn-dZ-qHV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="jurpark.jpeg">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DoL-4a-82e" kind="modal" id="QH7-zo-A1h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtg-wd-BOC">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="z7n-gT-ulE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="Riddick.jpg">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OYJ-NG-5oO" kind="modal" id="K7R-uZ-Qpi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtM-X8-GON">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="u0u-56-Eeg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="thewolverine.jpg">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5ym-jh-AWD" kind="modal" id="UUc-Rl-c1a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FtM-X8-GON" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="9fh-GR-lch"/>
+                            <constraint firstItem="mtg-wd-BOC" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="225" id="Dbi-aK-mMU"/>
+                            <constraint firstItem="blD-Ai-5gU" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KLD-dI-2QM"/>
+                            <constraint firstItem="mtg-wd-BOC" firstAttribute="bottom" secondItem="FtM-X8-GON" secondAttribute="bottom" type="default" id="QhE-7K-tle"/>
+                            <constraint firstItem="mtg-wd-BOC" firstAttribute="top" secondItem="blD-Ai-5gU" secondAttribute="top" type="default" id="Zfy-sb-Cb6"/>
+                            <constraint firstItem="blD-Ai-5gU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="55" id="awt-pk-6sT"/>
+                            <constraint firstItem="mtg-wd-BOC" firstAttribute="top" secondItem="FtM-X8-GON" secondAttribute="top" type="default" id="iu1-JW-yCU"/>
+                            <constraint firstItem="blD-Ai-5gU" firstAttribute="bottom" secondItem="mtg-wd-BOC" secondAttribute="bottom" type="default" id="uQo-Lb-Hr4"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-117" y="170"/>
+        </scene>
+        <!--Trailer2 View Controller-->
+        <scene sceneID="mGl-24-d3y">
+            <objects>
+                <viewController id="OYJ-NG-5oO" customClass="Trailer2ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vIo-8G-4Ae">
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtI-pV-4fJ">
+                                <items>
+                                    <navigationItem title="Riddick" id="wUP-WU-IWn">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="8wp-fa-Qga">
+                                            <connections>
+                                                <segue destination="2" kind="modal" id="NC1-2g-qSz"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EtI-pV-4fJ" firstAttribute="leading" secondItem="vIo-8G-4Ae" secondAttribute="leading" type="default" id="Vtn-F8-gdJ"/>
+                            <constraint firstItem="EtI-pV-4fJ" firstAttribute="trailing" secondItem="vIo-8G-4Ae" secondAttribute="trailing" type="default" id="dpB-uB-6y1"/>
+                            <constraint firstItem="EtI-pV-4fJ" firstAttribute="top" secondItem="vIo-8G-4Ae" secondAttribute="top" type="default" id="lbp-kh-k0z"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="view" destination="vIo-8G-4Ae" id="Oxx-6Y-91S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZoJ-NC-0Yr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="170"/>
+        </scene>
+        <!--Trailer1 View Controller-->
+        <scene sceneID="Ahg-CX-hc1">
+            <objects>
+                <viewController id="DoL-4a-82e" customClass="Trailer1ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7h4-PZ-dMR" customClass="UIActionSheet">
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBr-PJ-a2U">
+                                <items>
+                                    <navigationItem title="Jurassic Park" id="VDL-mE-W67">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="bzq-BJ-w2o">
+                                            <connections>
+                                                <segue destination="2" kind="modal" id="ev7-JQ-OEM"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qBr-PJ-a2U" firstAttribute="top" secondItem="7h4-PZ-dMR" secondAttribute="top" type="default" id="JJy-6b-O4o"/>
+                            <constraint firstItem="qBr-PJ-a2U" firstAttribute="leading" secondItem="7h4-PZ-dMR" secondAttribute="leading" type="default" id="Ss0-wd-udM"/>
+                            <constraint firstItem="qBr-PJ-a2U" firstAttribute="trailing" secondItem="7h4-PZ-dMR" secondAttribute="trailing" type="default" id="ax1-WM-SeA"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="view" destination="7h4-PZ-dMR" id="gdl-he-hRh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wRd-lA-1BM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126" y="616"/>
+        </scene>
+        <!--Trailer3 View Controller-->
+        <scene sceneID="JuY-0I-D4y">
+            <objects>
+                <viewController id="5ym-jh-AWD" customClass="Trailer3ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="act-fr-OeG">
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G1q-oi-PGm">
+                                <items>
+                                    <navigationItem title="The Wolverine" id="EHd-eu-qZp">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="N17-7I-crP">
+                                            <connections>
+                                                <segue destination="2" kind="modal" id="3Z4-Se-KF5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G1q-oi-PGm" firstAttribute="leading" secondItem="act-fr-OeG" secondAttribute="leading" type="default" id="AOw-Lx-Yax"/>
+                            <constraint firstItem="G1q-oi-PGm" firstAttribute="trailing" secondItem="act-fr-OeG" secondAttribute="trailing" type="default" id="bes-Oq-Mqw"/>
+                            <constraint firstItem="G1q-oi-PGm" firstAttribute="top" secondItem="act-fr-OeG" secondAttribute="top" type="default" id="ddH-c3-jKj"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="view" destination="act-fr-OeG" id="qz1-RR-o3A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="df3-Uk-XdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="616"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Riddick.jpg" width="198" height="198"/>
+        <image name="jurpark.jpeg" width="178" height="283"/>
+        <image name="thewolverine.jpg" width="459" height="680"/>
+    </resources>
+    <classes>
+        <class className="MyMoviesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyMoviesViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="Trailer1ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Trailer1ViewController.h"/>
+        </class>
+        <class className="Trailer2ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Trailer2ViewController.h"/>
+        </class>
+        <class className="Trailer3ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Trailer3ViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="NC1-2g-qSz"/>
+    </inferredMetricsTieBreakers>
+</document>
